@@ -1,11 +1,252 @@
-<html>
- <head>
-  <title>jzacharia8</title>
- </head>
-  <body>
-  <h1>Joan Zacharia</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="Images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800;900&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <title>Joan Zacharia</title>
+</head>
+
+<body>
+  <header>
+          <nav class="nav flex">
+              <div class="nav_logo">
+                  Joan Zacharia
+              </div>
+              <img src="Images/favicon.svg" class="logo-size">
+              <div>
+                  <a href="#" class="nav_button"><button class="button_nav">Home</button></a>
+                  <a href="#about" class="nav_links">About</a>
+                  <a href="#projects" class="nav_links">Projects</a>
+                  <a href="#contact" class="nav_links">Contact</a>
+              </div>
+          </nav>
+
+          <div class="container">
+              <div class="hero">
+                <h1 class="hero-small-style">Hi, I'm</h1>
+                <h2 class="hero-name-style">Joan Zacharia</h2>
+                <h3 class="hero-subtext">I like to work with web pages.</h3>
+                <p class="hero-small-subtext">I'm a software engineer with an interest in building <span class="body-highlight">front-end</span> applications, and a thirst for learning more.</p>
+                <a href="#projects"><button class="hero_button">View my projects</button></a>
+              </div>
+          </div>
+  </header>
+
+
+  <main class="container">
+    <div class="section-margin about">
+        <div class="about-text" id="about">
+            <h2 class="section-header">About Me</h2>
+            <p class="about-body">Hello! My name is Joan, I'm a software developer who comes from a background of Data Analytics, and loves to work as a Web developer.
+                I took an interest in computers when I was a kid, and my love for technology only grew when I discovered programming in Highschool. 
+                <br>
+                In my free time I love to go on hikes with my dog, football, music and play too many video games!
+                <br><br>
+                Here are a few technologies I’ve been working with recently:
+            </p>
+
+            <ul class="technologies">
+                <!-- <li class="tooltip"><span class="diamond">✦</span> React
+                    <span class="tooltiptext">Used in:</span>
+                </li> -->
+                <li class="tooltip"><span class="diamond">✦</span> JavaScript
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> CSS
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> HTML
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> VBA
+                </li>
+                <li class="tooltip"><span class="diamond">✦</span> Power BI
+                </li>
+            </ul>
+        </div>
+
+      <div class="about-slideshow">
+        <div class="img-box">
+          <div class="slide">
+              <img src="images/joan.jpg" class="slide-img-size" alt="">
+            <div class="slide-caption center">Hello World, This is me!</div>
+          </div>
+          <div class="slide-pink"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="projects" class="projects section-margin">
+        <h2 class="section-header">Projects</h2>
+
+        <div class="project">
+            <div class="project-demo">
+              <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="images/projects/jam/jam.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/projects/jam/jam2.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/projects/jam/jam3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/projects/jam/jam4.png" style="width:100%">
+                  </div>
+                
+            </div>
+            <br>
+                
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span>  
+            </div>
+                
+            <script>
+              let slideIndex1 = 0;
+              showSlides();
+              
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex1++;
+                if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex1-1].style.display = "block";  
+                dots[slideIndex1-1].className += " active";
+                setTimeout(showSlides, 4000); // Change image every 4 seconds
+              }
+          </script>
+            </div>
+            <div class="project-text">
+                  <h3 class="project-sub-title"> Proj 01.</h3>
+                  <h4 class="project-title">Restaurant Website</h4>
+                  <div class="body-background">
+                    <p class="project-body">Developed a website for a restaurant.
+                    </p>
+                  </div>
+                  <ul class="project-technologies">
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                  </ul>
+            </div>
+        </div>
+
+        <div class="project">
+          <div class="project-opposite project-text">
+                <h3 class="project-sub-title"> Data Analytic Project</h3>
+                <h4 class="project-title">Covid 19 Result Visualisation</h4>
+                <div class="body-background body-opposite">
+                  <p class="project-body">• With Power BI, created a data visualization for COVID 19
+                    • Included the number of deaths and recoveries as well as the total
+                    number of deaths and recoveries from around the world.
+                  </p>
+                </div>
+                <ul class="project-technologies">
+                  <li>Power BI</li>
+                </ul>
+          </div>
+          <div class="project-demo">
+            <div class="covid">
+              <img class="static"><img src="images/projects/corona_virus.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-demo">
+                <img class="static"><img src="images/projects/Memorygame.png">
+          </div>
+          <div class="project-text">
+                <h3 class="project-sub-title"> Angular Project</h3>
+                <h4 class="project-title">Memory Game</h4>
+                <div class="body-background">
+                  <p class="project-body">The cards have a pictures on one side and each picture appears on two cards. The game starts with all the cards face down and players take turns to turn over two cards.
+                  </p>
+                </div>
+                <ul class="project-technologies">
+                  <li>Power BI</li>
+                </ul>
+          </div>
+      </div>
+
+       <div class="project">
+          <div class="project-opposite project-text">
+                <h3 class="project-sub-title"> Front End Projects</h3>
+                <h4 class="project-title">Sample</h4>
+                <div class="body-background body-opposite">
+                  <p class="project-body">Devleoped a simple webpage.
+                  </p>
+                </div>
+                <ul class="project-technologies">
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ul>
+          </div>
+          <div class="project-demo">
+            <img class="static"><img src="images/projects/webex.png">
+          </div>
+        </div>
+  
+    </div>
+
+      <div class="contact" id="contact">
+        <div>
+              <h3 class="contact-sub-title">Interested?</h3>
+              <h2 class="section-header contact-title">Get in contact with me!</h2>
+              <p class="contact-body">If you like my work and are interested in having me work for you, reach out! I post updates to my site and social medias frequently, and am constantly working on new projects and challenging myself. I would love to hear from you! <br>Thanks for visiting!</p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info-block flex">
+            <div class="contact-link">
+              <a href="https://github.com/zacjr8" target="_blank" class="github"><img src="images/github.png"></a>
+            </div>
+            <span>✦</span>
+            <div class="contact-link">
+              <a href="https://www.linkedin.com/in/joan-zacharia-8a2253193" class="linkedin"><img src="images/linkedin.png"></a></a>
+            </div>
+          </div>
+          <span>✦</span>
+          <div class="contact-name">
+            Joan<br>Zacharia
+          </div>
+          <span>✦</span>
+          <div class="contact-info-block-r flex">
+            <div class="contact-link contact-link-r">
+              <a href="#"class="">Home</a>
+            </div>
+            <span>✦</span>
+            <div class="contact-link contact-link-r">
+              <a href="mailto:joan.iype.zacharia8@gmail.com" class="email"><img src="images/email.png"></a></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+        <p>Built by Joan Zacharia 2022</p>
+    </div>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
