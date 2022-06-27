@@ -863,4 +863,13 @@ button:hover{
       margin-top: -166px;
   }
 
+  @media (max-width: 550px){
+      .abovefooter{
+        
+          position: relative;
+          left: 40px;
+      }
+      
+  }
+
  
