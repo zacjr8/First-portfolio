@@ -191,6 +191,54 @@ button:hover{
     font-weight: 300;
 }
 
+.company{
+    
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color:#c1ace2;
+    letter-spacing: .25px;
+    width: 80%;
+    font-weight: bold;
+}
+
+.workexp img{
+    width: 50px;
+    vertical-align: middle;
+}
+
+.workexp{
+    position: relative;
+    top: 255px;
+}
+
+.workexp .work-body{
+    position: relative;
+    top: -65px;
+}
+
+.date{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:antiquewhite;
+    letter-spacing: .25px;
+    font-weight: 300;
+    margin-top: -30px;
+}
+
+.company-body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color:#c1ace2;
+    letter-spacing: .25px;
+    font-weight: 300;
+    margin-top: -30px;
+}
+
+.workexp p{
+    text-align: justify;
+}
+
 .body-highlight{
     color:#eb5172;
     font-weight: 700;
@@ -213,6 +261,10 @@ button:hover{
     letter-spacing: .25px;
     font-weight: 300;
     margin-top: -30px;
+}
+
+.section-margin p{
+    text-align: justify;
 }
 
 .diamond{
@@ -285,7 +337,7 @@ button:hover{
     height: 93%;
     border: solid 3px #eb5172;
     position: absolute;
-    top:-20px;
+    top:-200px;
     left: 20px;
     border-radius: 6px;
     transition: all .2s;
@@ -298,6 +350,11 @@ button:hover{
     font-family: 'Roboto Mono', monospace;
     color:#f6f1ff;
     font-size: 15px;
+}
+
+.slide-caption.center{
+    position: relative;
+    top: -170px;
 }
 
 .dot {
@@ -318,7 +375,10 @@ button:hover{
 .slide-img-size{
     width: 100%;
     border-radius: 6px;
+    position: relative;
+    top: -180px;
 }
+
 
 .center{
     text-align: center;
@@ -334,7 +394,7 @@ button:hover{
 }
 
 .project-text{
-    text-align: right;
+    text-align: justify;
     width: 70%;
     z-index: 1;
     position: relative;
@@ -460,6 +520,21 @@ button:hover{
     letter-spacing: .25px;
     width: 60%;
     font-weight: 300;
+}
+
+.contact p{
+    text-align: justify;
+}
+
+.contact .thanks{
+    margin: 50px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:#c1ace2;
+    letter-spacing: .25px;
+    width: 60%;
+    font-weight: 300;
+    text-align: center;
 }
 
 .contact-info span{
@@ -680,8 +755,12 @@ button:hover{
 }
 
 .covid img{
-    width: 80%;
+    width: 90%;
     margin-left: 20%;
+}
+
+.angular img{
+    width: 90%;
 }
 
 
@@ -693,6 +772,16 @@ button:hover{
   
   /* The dots/bullets/indicators */
   .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: plum;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dot1 {
     height: 15px;
     width: 15px;
     margin: 0 2px;

@@ -64,7 +64,28 @@
                 </li>
                 <li class="tooltip"><span class="diamond">✦</span> Power BI
                 </li>
+                <li class="tooltip"><span class="diamond">✦</span> GitHub
+                </li>
             </ul>
+            
+            <div class="workexp">
+              <h4 class="section-header">Work Experience.</h4>
+              <div class="work-body">
+                <p class="company"><img src="images/ey.png">  EY (Ernst & Young)</p>
+                <p class="project-sub-title"><span class="diamond">✦</span>Software Engineer (Data Analyst)</p><br>
+                <p class="date"> October 2020 - March 2022</p><br>
+                <p class="company-body">• Primary responsible for working with Power BI and VBA.<br>
+                • To address the business needs of corporate clients, single-handedly took over 5 VBA projects.</p>
+                <br>
+                <br>
+
+                <p class="company"><img src="images/ad.jpg">  Capital Sports Arena</p>
+                <p class="project-sub-title"><span class="diamond">✦</span>Senior Marketing Executive</p><br>
+                <p class="date"> August 2021 - Novemeber 2021</p><br>
+                <p class="company-body">• Leading the end to end influencer Marketing for the clients on various social media platforms for football turf and fulfil their objective of the campaign.<br>
+                  • Onboarding influencers exclusively with the company and hence managing their social media handles and their game deals.</p>
+              </div>
+            </div>
         </div>
 
       <div class="about-slideshow">
@@ -113,29 +134,29 @@
             </div>
                 
             <script>
-              let slideIndex1 = 0;
-              showSlides();
+              let slideIndexA = 0;
+              showSlides1();
               
-              function showSlides() {
+              function showSlides1() {
                 let i;
                 let slides = document.getElementsByClassName("mySlides");
                 let dots = document.getElementsByClassName("dot");
                 for (i = 0; i < slides.length; i++) {
                   slides[i].style.display = "none";  
                 }
-                slideIndex1++;
-                if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+                slideIndexA++;
+                if (slideIndexA > slides.length) {slideIndexA = 1}    
                 for (i = 0; i < dots.length; i++) {
                   dots[i].className = dots[i].className.replace(" active", "");
                 }
-                slides[slideIndex1-1].style.display = "block";  
-                dots[slideIndex1-1].className += " active";
-                setTimeout(showSlides, 4000); // Change image every 4 seconds
+                slides[slideIndexA-1].style.display = "block";  
+                dots[slideIndexA-1].className += " active";
+                setTimeout(showSlides1, 4000); // Change image every 4 seconds
               }
           </script>
             </div>
             <div class="project-text">
-                  <h3 class="project-sub-title"> Proj 01.</h3>
+                  <h3 class="project-sub-title"> Front End Project</h3>
                   <h4 class="project-title">Restaurant Website</h4>
                   <div class="body-background">
                     <p class="project-body">Developed a website for a restaurant.
@@ -154,10 +175,10 @@
                 <h3 class="project-sub-title"> Data Analytic Project</h3>
                 <h4 class="project-title">Covid 19 Result Visualisation</h4>
                 <div class="body-background body-opposite">
-                  <p class="project-body">• With Power BI, created a data visualization for COVID 19
+                    <p class="project-body">• With Power BI, created a data visualization for COVID 19
                     • Included the number of deaths and recoveries as well as the total
                     number of deaths and recoveries from around the world.
-                  </p>
+                    </p>
                 </div>
                 <ul class="project-technologies">
                   <li>Power BI</li>
@@ -172,7 +193,9 @@
 
         <div class="project">
           <div class="project-demo">
+              <div class="angular">
                 <img class="static"><img src="images/projects/Memorygame.png">
+              </div>
           </div>
           <div class="project-text">
                 <h3 class="project-sub-title"> Angular Project</h3>
@@ -190,9 +213,9 @@
        <div class="project">
           <div class="project-opposite project-text">
                 <h3 class="project-sub-title"> Front End Projects</h3>
-                <h4 class="project-title">Sample</h4>
+                <h4 class="project-title">Webpages</h4>
                 <div class="body-background body-opposite">
-                  <p class="project-body">Devleoped a simple webpage.
+                  <p class="project-body">Devleoped few webpages.
                   </p>
                 </div>
                 <ul class="project-technologies">
@@ -201,17 +224,65 @@
                 </ul>
           </div>
           <div class="project-demo">
-            <img class="static"><img src="images/projects/webex.png">
+            <div class="slideshow-container">
+
+              <div class="mySlides1 fade">
+                <img src="images/projects/webex.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides1 fade">
+                <img src="images/projects/webex1.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides1 fade">
+                <img src="images/projects/webex2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides1 fade">
+                  <img src="images/projects/webex3.png" style="width:100%">
+                </div>
+              
           </div>
+          <br>
+              
+          <div style="text-align:center">
+              <span class="dot1"></span> 
+              <span class="dot1"></span> 
+              <span class="dot1"></span>
+              <span class="dot1"></span>  
+          </div>
+
+          <script>
+            let slideIndexB = 0;
+            showSlides2();
+            
+            function showSlides2() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides1");
+              let dots = document.getElementsByClassName("dot1");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndexB++;
+              if (slideIndexB > slides.length) {slideIndexB = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndexB-1].style.display = "block";  
+              dots[slideIndexB-1].className += " active";
+              setTimeout(showSlides2, 4000); // Change image every 4 seconds
+            }
+        </script>
         </div>
   
-    </div>
+
+  </div>
 
       <div class="contact" id="contact">
         <div>
               <h3 class="contact-sub-title">Interested?</h3>
               <h2 class="section-header contact-title">Get in contact with me!</h2>
-              <p class="contact-body">If you like my work and are interested in having me work for you, reach out! I post updates to my site and social medias frequently, and am constantly working on new projects and challenging myself. I would love to hear from you! <br>Thanks for visiting!</p>
+              <p class="contact-body">If you like my work and are interested in having me work for you, reach out! I post updates to my site and social medias frequently, and am constantly working on new projects and challenging myself. I would love to hear from you! <br></p><p class="thanks">Thanks for visiting!</p>
         </div>
         <div class="contact-info">
           <div class="contact-info-block flex">
