@@ -200,11 +200,17 @@ button:hover{
     letter-spacing: .25px;
     width: 80%;
     font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.workexp .work-sep{
+    margin-top: 70px;
 }
 
 .workexp img{
     width: 50px;
     vertical-align: middle;
+    margin-top: -2px;
 }
 
 .workexp{
@@ -213,9 +219,15 @@ button:hover{
     margin-top: -520px;
 }
 
+
 .workexp .work-body{
     position: relative;
     top: -65px;
+}
+
+.work-body .work-body-header{
+    position: relative;
+    top: 40px;
 }
 
 .date{
@@ -238,6 +250,7 @@ button:hover{
 
 .workexp p{
     text-align: justify;
+    margin-top: -30px;
 }
 
 .body-highlight{
@@ -393,6 +406,11 @@ button:hover{
 
 
 /* Projects */
+
+#projects{
+    position: relative;
+    top: 100px;
+}
 
 .project{
     margin: 0px auto 150px auto;
