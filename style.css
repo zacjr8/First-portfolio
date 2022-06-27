@@ -210,6 +210,7 @@ button:hover{
 .workexp{
     position: relative;
     top: 255px;
+    margin-top: -520px;
 }
 
 .workexp .work-body{
@@ -261,6 +262,7 @@ button:hover{
     letter-spacing: .25px;
     font-weight: 300;
     margin-top: -30px;
+    margin-right: 197px;
 }
 
 .section-margin p{
@@ -278,6 +280,9 @@ button:hover{
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
     font-weight: 300;
+    position: relative;
+    right: 21px;
+    margin-right: 27px;
 }
 
 
@@ -333,12 +338,12 @@ button:hover{
 
 .slide-pink{
     z-index: 1;
-    width: 100%;
+    width: 50%;
     height: 93%;
     border: solid 3px #eb5172;
     position: absolute;
-    top:-200px;
-    left: 20px;
+    top:-346px;
+    left: 570px;
     border-radius: 6px;
     transition: all .2s;
 }
@@ -354,7 +359,8 @@ button:hover{
 
 .slide-caption.center{
     position: relative;
-    top: -170px;
+    top: -318px;
+    left: 406px;
 }
 
 .dot {
@@ -373,10 +379,11 @@ button:hover{
 }
 
 .slide-img-size{
-    width: 100%;
+    width: 50%;
     border-radius: 6px;
     position: relative;
-    top: -180px;
+    top: -330px;
+    left: 545px;
 }
 
 
@@ -612,6 +619,7 @@ button:hover{
 .footer{
     margin: 0 0 -1em 0;
     text-align: center;
+    margin-top: -152px;
 }
 
 .footer p{
@@ -632,6 +640,8 @@ button:hover{
     }
     .nav{
         align-items: center;
+        padding-right: 28px;
+        right: 13px;
     }
 }
 @media (max-width: 600px){
@@ -651,12 +661,33 @@ button:hover{
     .body-style{
         width: 100%;
     }
-    .slide, .slide-pink, .dots, .img-box, .about-slideshow{
+    .slide, .dots, .img-box, .about-slideshow{
         width: 300px;
     }
     .contact-body, .about-body, .hero-small-subtext{
         font-size: 1.1rem;
         width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .slide-pink{
+        width: 168px;
+        left: 370px;
+        top: -438px;
+        height: -102px;
+    }
+    .slide-img-size{
+        width: 168px;
+        left: 359px;
+        top: -425px;
+        height: -102px;
+    }
+    .slide-caption.center{
+        width: 181px;
+        left: 364px;
+        top: -430px;
+        height: -102px;
     }
 }
 
@@ -723,14 +754,23 @@ button:hover{
         text-align: center;
         width: 100%;
     }
+    #projects{
+        position: relative;
+        top: 80px;
+    }
+
+}
+
+@media (max-width: 250px){
     .contact{
         margin: 1rem 0 1rem 0;
     }
-     .contact-info{
+    .contact-info{
         flex-direction: column;
         margin: 5rem auto 2rem auto;
         padding:0;
         justify-self: center;
+        margin-left: 30px;
     }
     .contact-name{
         margin: 10px;
@@ -745,7 +785,6 @@ button:hover{
         margin: 0 auto;
         margin-right: 13%;
     }
-
 }
 
 @media (min-width: 1250px){
@@ -811,3 +850,17 @@ button:hover{
     .text {font-size: 11px}
   }
   
+
+  .project-text .proj-right{
+      text-align: end;
+  }
+
+  .aboutmeheader{
+      margin-top: -173px;
+  }
+
+  .abovefooter{
+      margin-top: -166px;
+  }
+
+ 
