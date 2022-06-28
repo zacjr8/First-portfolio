@@ -476,8 +476,11 @@ button:hover{
     letter-spacing: .5px;
     width: 50%;
     font-weight: 300;
-    text-align: right;
     display: inline;
+}
+
+.project-body p{
+    text-align: justify;
 }
 
 .project-technologies{
@@ -612,7 +615,7 @@ button:hover{
     margin: 8rem auto;
     margin-right: 10.5rem;
     padding-left: 100px;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     display:flex;
 }
@@ -690,22 +693,36 @@ button:hover{
 
 @media (max-width: 600px){
     .slide-pink{
-        width: 168px;
-        left: 370px;
-        top: -438px;
+        width: 268px;
+        left: -4px;
+        top: -70px;
         height: -102px;
     }
     .slide-img-size{
-        width: 168px;
-        left: 359px;
-        top: -425px;
-        height: -102px;
+        display: flex;
+      flex-direction: column;
+      position: relative;
+      left: -24px;
+      top: -45px;
+      width: 267px;
     }
     .slide-caption.center{
         width: 181px;
         left: 364px;
         top: -430px;
         height: -102px;
+        display: flex;
+      flex-direction: column;
+      position: absolute;
+      justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 850px){
+    .workexp{
+        margin-top: -300px;
     }
 }
 
@@ -779,16 +796,16 @@ button:hover{
 
 }
 
-@media (max-width: 250px){
+@media (max-width: 350px){
     .contact{
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 0 1rem 0;  
     }
     .contact-info{
         flex-direction: column;
-        margin: 5rem auto 2rem auto;
+        margin: 5rem 0px 2rem -50px;
         padding:0;
         justify-self: center;
-        margin-left: 30px;
+        width: 10px;
     }
     .contact-name{
         margin: 10px;
@@ -797,11 +814,12 @@ button:hover{
     .contact-info-block{
         order: 2;
         margin: 0 auto;
+        width: 0px;
     }
     .contact-info-block-r{
         order: 2;
-        margin: 0 auto;
         margin-right: 13%;
+        padding: 0%;
     }
 }
 
@@ -809,17 +827,28 @@ button:hover{
     .container{
         margin: 0 auto;
     }
+    
+
+    .covid img{
+        position: relative;
+        left: 30px;
+    }
+
+    .angular img{
+        display: block;
+        margin-left: -50px;
+        margin-right: auto;
+    }
 }
 
 .covid img{
     width: 90%;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .angular img{
     width: 90%;
 }
-
 
 .slideshow-container {
     max-width: 1000px;
@@ -867,6 +896,17 @@ button:hover{
   @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
   }
+
+  @media (max-width: 1000px){
+    .technologies li{
+        position: relative;
+        right: 10px;
+        padding: 10px;
+    }
+        .technologies p{
+            text-align: center;
+    }
+  }
   
 
   .project-text .proj-right{
@@ -881,11 +921,17 @@ button:hover{
       margin-top: -166px;
   }
 
-  @media (max-width: 550px){
+  @media (max-width: 50px){
       .abovefooter{
         
           position: relative;
-          left: 40px;
+          left: 50px;
+          width: 30px;
+          padding: 0%;
+      }
+
+      .contact-info-block{
+          width: 20px;
       }
       
   }
