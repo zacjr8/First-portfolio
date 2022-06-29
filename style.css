@@ -409,12 +409,17 @@ button:hover{
 
 #projects{
     position: relative;
-    top: 100px;
+    top: 866px;
+    left: -796px;
+    margin-left: -31px;
 }
 
 .project{
     margin: 0px auto 150px auto;
     align-items: center;
+    margin-left: -170px;
+    position: relative;
+    left: 100px;
     display:flex;
 }
 
@@ -505,6 +510,8 @@ button:hover{
     margin: -5px 0 0 5px;
     cursor: pointer;
 }
+
+
 
 
 .project-img-link:hover{
@@ -640,7 +647,10 @@ button:hover{
 .footer{
     margin: 0 0 -1em 0;
     text-align: center;
-    margin-top: -152px;
+    margin-top: 450px;
+    position: relative;
+    left: 50px;
+    margin-left: -100px;
 }
 
 .footer p{
@@ -648,6 +658,25 @@ button:hover{
     color:#eb5172;
     font-family: 'Roboto Mono', monospace;
     font-size: 13px;
+}
+
+.projects .section-header{
+    margin-left: -843px;
+    text-align: left;
+    position: relative;
+    top: -58px;
+    left: 848px;
+}
+
+.contacthead{
+    position: relative;
+    top: 8px;
+    left: 150px;
+    color: #f6f1ff;
+    font-family: 'Poppins', monospace;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    margin-right: 321px;
 }
 
 
@@ -661,7 +690,7 @@ button:hover{
     }
     .nav{
         align-items: center;
-        padding-right: 28px;
+        padding-right: 145px;
         right: 13px;
     }
 }
@@ -675,6 +704,7 @@ button:hover{
     }
     .project-title{
         font-size: 1.7rem;
+        text-align: center;
     }
     .section-header{
         font-size: 2.2rem;
@@ -687,7 +717,9 @@ button:hover{
     }
     .contact-body, .about-body, .hero-small-subtext{
         font-size: 1.1rem;
-        width: 100%;
+        width: 90%;
+        position: relative;
+        left: -18px;
     }
 }
 
@@ -725,6 +757,54 @@ button:hover{
         margin-top: -300px;
     }
 }
+
+@media (max-width: 600px){
+    .grid-container .item2{
+        width: 449px;
+        left: -748px;
+        top: 444px;
+    }
+}
+@media (max-width: 600px){
+.project .section-header{
+    position: relative;
+    top: -500px;
+}
+}
+
+@media (max-width: 600px){
+    .contacthead{
+        position: relative;
+        font-size: 1.3rem;
+        width: 500px;
+        left: -80px;
+    }
+
+    .contact .thanks{
+        position: relative;
+        left: -20px;
+    }
+    }
+
+.proj-header{
+    color: #f6f1ff;
+    font-family: 'Poppins', monospace;
+    font-size: 3rem;
+     position:relative; 
+     left: -70px; 
+     top: -10px;
+}
+
+    @media (max-width: 600px){
+        .proj-header{
+            top: 190px;
+    width: 500px;
+    left: 26px;
+        }
+ }
+    
+
+
 
 @media (max-width: 850px){
 
@@ -767,8 +847,19 @@ button:hover{
 
     .project{
         flex-direction: column;
+        margin-top: 264px;
+        position: relative;
+        left: 184px;
+        width: 410px;
 
     }
+
+    .covid img{
+        position: relative;
+    left: -34px;
+    }
+
+
     .project-demo, .project-text{
         max-width:500px;
         margin: .5em auto;
@@ -784,6 +875,9 @@ button:hover{
     .body-background{
         margin: 0 auto;
         width: 100%;
+        text-align: center;
+        position: relative;
+        left: -20px;
     }
     .project-opposite{
         text-align: center;
@@ -791,21 +885,35 @@ button:hover{
     }
     #projects{
         position: relative;
-        top: 80px;
+        top: 422px;
+        left: 1px;
     }
+
+    .project-sub-title{
+        position: relative;
+        text-align: center;
+    }
+
+    .project-technologies {
+        text-align: center;
+    }
+
+    
 
 }
 
-@media (max-width: 350px){
+@media (max-width: 10px){
     .contact{
         margin: 1rem 0 1rem 0;  
     }
     .contact-info{
-        flex-direction: column;
+        flex-direction: row;
         margin: 5rem 0px 2rem -50px;
-        padding:0;
+        padding: -1px;;
         justify-self: center;
-        width: 10px;
+        position: relative;
+        width: 1px;
+        left: 10px;
     }
     .contact-name{
         margin: 10px;
@@ -814,7 +922,7 @@ button:hover{
     .contact-info-block{
         order: 2;
         margin: 0 auto;
-        width: 0px;
+        width: 10px;
     }
     .contact-info-block-r{
         order: 2;
@@ -838,6 +946,10 @@ button:hover{
         display: block;
         margin-left: -50px;
         margin-right: auto;
+    }
+
+    img{
+        width: 10px;
     }
 }
 
@@ -936,4 +1048,82 @@ button:hover{
       
   }
 
+ /* Create two equal columns that floats next to each other */
+ .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 135px;
  
+  }
+  
+  .grid-container > div {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 20px;
+    margin-left: -32px;
+    width: 539px;
+  }
+  
+  .item1 {
+    grid-column: 2;
+    position: relative;
+    left: -119px;
+  }
+
+  .item2{
+      top: 8px;
+      margin-right: 20px;
+      position: relative;
+    left: -192px;
+  }
+
+  .grid-container h5{
+      font-size: 40px;
+  }
+
+  @media (max-width: 1000px){
+      .footer{
+          margin-left: 20px;
+          position: relative;
+          left: -10px;
+      }
+      .linkscontact .contact-info{
+          flex-direction: column;
+          width: 10px;
+        position: relative;
+        left: 10px;
+        margin-left: -10px;
+    }
+
+    .linkscontact .contact-name{
+      position: relative;
+      left: 77px;
+    }
+      .linkscontact .span1{
+        display: none;
+        position: relative;
+        left: 71px;
+    
+      }
+  }
+  
+
+  .linkscontact{
+      position: relative;
+      left: 15px;
+      margin-left: 10px;
+  }
+
+  .contactpara{
+    position: relative;
+    left: 40px;
+  }
+
+  .abovefooter img{
+      width: 40px;
+  }
+
+  .span1{
+      position: relative;
+      top: 25px;
+  }
