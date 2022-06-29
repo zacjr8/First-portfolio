@@ -690,8 +690,8 @@ button:hover{
     }
     .nav{
         align-items: center;
-        padding-right: 145px;
-        right: 13px;
+        padding-right: 62px;
+        right: -3px;
     }
 }
 @media (max-width: 600px){
